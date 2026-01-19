@@ -14,11 +14,11 @@ class RSVPReader:
         self.root.configure(bg='black')
 
         self.base_path = os.path.dirname(os.path.abspath(__file__))
-        icon_path = os.path.join(self.base_path, "icon.png")
+        icon_path = os.path.join(self.base_path, "docs/icon.png")
 
         try:
-            if os.path.exists("icon.png"):
-                icon_image = tk.PhotoImage(file="icon.png")
+            if os.path.exists("docs/icon.png"):
+                icon_image = tk.PhotoImage(file="docs/icon.png")
                 self.root.iconphoto(False, icon_image)
         except Exception as e:
             print(f"Warning: Could not load icon.png: {e}")
@@ -362,8 +362,8 @@ class RSVPReader:
         vis_window.configure(bg="#1e1e1e")
 
         try:
-            if os.path.exists("icon.png"):
-                icon_image = tk.PhotoImage(file="icon.png")
+            if os.path.exists("docs/icon.png"):
+                icon_image = tk.PhotoImage(file="docs/icon.png")
                 vis_window.iconphoto(False, icon_image)
         except:
             pass
