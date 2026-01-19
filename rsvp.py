@@ -13,6 +13,9 @@ class RSVPReader:
         self.root.geometry("800x400")
         self.root.configure(bg='black')
 
+        self.base_path = os.path.dirname(os.path.abspath(__file__))
+        icon_path = os.path.join(self.base_path, "icon.png")
+
         try:
             if os.path.exists("icon.png"):
                 icon_image = tk.PhotoImage(file="icon.png")
@@ -50,9 +53,10 @@ class RSVPReader:
         self._draw_crosshairs()
 
     def load_dictionary(self):
+        dict_path = os.path.join(self.base_path, 'dictionary.json')
         try:
-            if os.path.exists('dictionary.json'):
-                with open('dictionary.json', 'r', encoding='utf-8') as f:
+            if os.path.exists(dict_path):
+                with open(dict_path, 'r', encoding='utf-8') as f:
                     self.english_dict = json.load(f)
                 print("Dictionary loaded. Smart citation filtering enabled.")
             else:

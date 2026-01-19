@@ -9,4 +9,12 @@ This specific implementation is optimized for scientific papers in PDF format. I
 - RSVP Display: Centers words arround a pivot character in red to allow focal reading.
 - WPM Control: Adjustable Words Per Minute (default: 350).
 - Text Visualizer: Allows the user to see the original uploaded text, and highlights in red the parsed out sections.
-- Dictionary Warning: In order to properly sanitize the document, the user needs to download the [Webster's English Dictionary](https://github.com/matthewreagan/WebstersEnglishDictionary/blob/master/dictionary.json) and save it as `dictionary.json` in the project's folder.
+- Dictionary Warning: When working with the project files, in order to properly sanitize the document, the user needs to download the [Webster's English Dictionary](https://github.com/matthewreagan/WebstersEnglishDictionary/blob/master/dictionary.json) if and save it as `dictionary.json` in the project's folder. The release has the dictionary compiled within the program.
+
+## Installation
+
+No installation required.
+
+1. Go to the Releases page on the right side.
+2. Download the latest smart_rsvp_reader.exe.
+3.Run the executable directly.
