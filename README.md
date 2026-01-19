@@ -5,6 +5,7 @@ Smart RSVP is a Python-based speed reading tool built with tkinter. It utilizes 
 This specific implementation is optimized for scientific papers in PDF format. It includes a parsing algorithm to strip out metadata, citations, and non-prose elements, to ensure a seamless reading flow.
 
 ![Main Page](docs/image.png)
+
 ## Features
 
 - RSVP Display: Centers words arround a pivot character in red to allow focal reading.
@@ -18,4 +19,4 @@ No installation required.
 
 1. Go to the Releases page on the right side.
 2. Download the latest rsvp.exe.
-3.Run the executable directly.
+3. Run the executable directly.
